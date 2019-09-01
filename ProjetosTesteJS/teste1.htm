@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+    </head>
+    <body>
+        <h1>Lógica de programação JavaScript</h1>
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">*</button>
+        <button onclick="calcular('/')">/</button>
+        <script>
+
+            function calcular (simbolo)
+            {
+                let num1 = prompt('Digite o primeiro número');
+                let num2 = prompt('Digite o segundo número');
+
+                switch (simbolo)
+                {
+                    case '+':
+                        alert(num1 + num2);
+                        break;
+                    case '-':
+                        alert(num1 - num2);
+                        break;
+                    case '/':
+                        alert(num1 / num2);
+                        break;
+                    case '*':
+                        alert(num1 * num2);
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>
